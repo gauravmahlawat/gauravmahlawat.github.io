@@ -17,6 +17,7 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
+  transition: background 0.8s ease-in-out;
 }
 
 h1, h2, h3, h4 {
@@ -1133,4 +1134,180 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 #copyright p a:hover {
   color: #00b4d9;
+}
+
+.switch {
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+}
+
+.names {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.light {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  padding: 4px 20px;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.light-top {
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  top: -12px;
+  padding: 18px 10px;
+}
+
+.dark {
+  position: absolute;
+  right: 18px;
+  opacity: .5;
+  top: 5px;
+}
+
+p.dark.dark-active-back {
+  color: white;
+  opacity: 1;
+}
+
+.switch-case {
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 15%);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  top: 0px;
+  width: 71px;
+  height: 36px;
+  left: 0px;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.dark-active{
+  transform: translateX(111%);
+  background-color: #34323D;
+  color: white;
+}
+
+.dark-body {
+  background-color: #26242E;
+  transition: background 0.8s ease-in-out;
+}
+
+.dark-body .services {
+  background-color: #26242E;
+  transition: background 0.8s ease-in-out;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.dark-body .services-item{
+  transition: background 0.8s ease-in-out;
+  background-color: #26242E;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+.dark-body .timeline li .content-text {
+  background-color: #26242E;
+  transition: background 0.8s ease-in-out;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.dark-body .indigo {
+  background-color: #26242E !important;
+  transition: background 0.8s ease-in-out;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+.dark-body .contact-form-area {
+  background-color: #26242E;
+  transition: background 0.8s ease-in-out;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+.dark-body .navbar-expand-lg .navbar-nav .nav-link {
+  color: white !important;
+}
+.dark-body h1 {
+  color: white;
+}
+.dark-body h2 {
+  color: white;
+}
+.dark-body h3 {
+  color: white;
+}
+.dark-body h4 {
+  color: white;
+}
+.dark-body h5 {
+  color: white;
+}
+.dark-body h6 {
+  color: white;
+}
+.dark-body p {
+  color: white;
+}
+.dark-body div {
+  color: white;
+}
+.dark-body a {
+  color: white;
+}
+.dark-body .about-profile .pro-title {
+  color: white;
+}
+.dark-body .services-item .services-content h3 a{
+  color: white;
+}
+
+.dark-body .footer-right-contact .single-contact p a {
+  color: white;
+}
+
+.dark-body .slicknav_nav {
+  background-color: #26242E !important;
+  transition: background 0.8s ease-in-out;
+}
+
+.circle {
+  position: relative;
+  margin-left: 20px;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+  margin: auto;
+  transition: background 0.8s ease-in-out;
+}
+
+.slicknav_nav a {
+  text-align: center;
+}
+
+.dark-body .circle {
+  background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+  transition: background 0.8s ease-in-out;
+}
+
+.dark-body .crescent {
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.dark-body .crescent {
+  transform: scale(1.1);
+  background: #26242E;
 }

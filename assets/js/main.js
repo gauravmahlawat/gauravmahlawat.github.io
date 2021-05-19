@@ -89,6 +89,18 @@
 
 
 
-  });      
+  });   
+  
+  $(".dark").click(function(){
+    $(this).toggleClass("dark-active-back");
+    $('.switch-case').toggleClass("dark-active");
+    $('body').toggleClass('dark-body');
+  });
+
+  $(".light").click(function(){
+    $('.dark').removeClass("dark-active-back");
+    $('.switch-case').removeClass("dark-active");
+    $('body').removeClass('dark-body');
+  });
 
 }(jQuery));
