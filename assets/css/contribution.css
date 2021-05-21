@@ -1,0 +1,271 @@
+.contribution--guide .hero-area-bg {
+    background: url(../img/drupal-banner.jpeg) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .contribution--guide .hero-area-bg {
+         margin-top: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    .contribution--guide #hero-area .contents .head-title {
+        font-size: 29px;
+        letter-spacing: 0px;
+        word-spacing: 7px;
+    }
+}
+
+.contribution--guide *, .contribution--guide *:before, .contribution--guide *:after {
+    box-sizing: border-box;
+}
+.contribution--guide html {
+    font-family: "metropolis", sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6875rem;
+}
+.contribution--guide body {
+    word-break: break-word;
+    hyphens: auto;
+    margin: 0;
+    color: #313637;
+    background-color: #f7f9fa;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='50' height='84' viewBox='0 0 50 84'%3e %3cpath opacity='0.05' fill='%230e6ba6' d='M25,61.7C25,68.5,19.4,74,12.5,74S0,68.5,0,61.7c0-5.7,3.9-9.6,7.4-12.9c2.3-2.2,4.5-4.4,5.1-6.8c0.7,2.4,2.8,4.6,5.1,6.8C21.1,52.2,25,56,25,61.7z M42.6,6.8c-2.3-2.2-4.5-4.4-5.1-6.8c-0.7,2.4-2.9,4.6-5.1,6.8C28.9,10.2,25,14,25,19.7C25,26.5,30.6,32,37.5,32S50,26.5,50,19.7C50,14,46.1,10.2,42.6,6.8z'/%3e%3c/svg%3e");
+    background-position: top left;
+   /* LTR */
+}
+.contribution--guide body.js-fixed {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+.contribution--guide [dir="rtl"] body {
+    background-position: top right;
+}
+.contribution--guide a {
+    color: #0d77b5;
+}
+.contribution--guide a:hover {
+    color: #2494db;
+}
+.contribution--guide a:focus {
+    outline: solid 2px currentColor;
+    outline-offset: 2px;
+}
+.contribution--guide img, .contribution--guide video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.contribution--guide audio {
+    display: block;
+    max-width: 100%;
+}
+.contribution--guide h1 {
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+    letter-spacing: -0.01em;
+    color: #0d1214;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.6875rem;
+}
+@media (min-width: 43.75rem) {
+    .contribution--guide h1 {
+        margin-top: 2.25rem;
+        margin-bottom: 2.25rem;
+        font-size: 3.75rem;
+        line-height: 4.5rem;
+   }
+}
+.contribution--guide h2 {
+    margin-top: 1.125rem;
+    margin-bottom: 1.125rem;
+    letter-spacing: -0.01em;
+    color: #0d1214;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+@media (min-width: 43.75rem) {
+    .contribution--guide h2 {
+        margin-top: 2.25rem;
+        margin-bottom: 2.25rem;
+        font-size: 2.25rem;
+        line-height: 3.375rem;
+   }
+}
+.contribution--guide h1, .contribution--guide h2, .contribution--guide h3, .contribution--guide h4, .contribution--guide h5, .contribution--guide h6 {
+    font-family: "metropolis", sans-serif;
+}
+.contribution--guide [dir="ltr"] ul {
+    margin-left: 1.5em;
+}
+.contribution--guide [dir="rtl"] ul {
+    margin-right: 1.5em;
+}
+.contribution--guide [dir="ltr"] ul {
+    margin-right: 0;
+}
+.contribution--guide [dir="rtl"] ul {
+    margin-left: 0;
+}
+.contribution--guide [dir="ltr"] ul {
+    padding-left: 0;
+}
+.contribution--guide [dir="rtl"] ul {
+    padding-right: 0;
+}
+.contribution--guide ul {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    list-style-type: disc;
+    list-style-image: none;
+}
+.contribution--guide [dir="ltr"] .overlay {
+    left: 0;
+}
+.contribution--guide [dir="rtl"] .overlay {
+    right: 0;
+}
+.contribution--guide .overlay {
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+    background: #0d77b5;
+}
+.contribution--guide .js-overlay-active .overlay {
+    display: block;
+}
+
+.contribution--guide .btn-common {
+    color: white;
+}
+
+.contribution-content li {
+    list-style-type: disc;
+}
+
+.contribution-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 920px) {
+    .contribution-content {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+}
+
+.contribution-content h1 {
+    font-size: 90px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+@media (max-width: 992px) {
+    .contribution-content h1 {
+        font-size: 55px;
+    }
+    .contribution-content h2 {
+        font-size: 44px;
+    }
+    .contribution-content h3 {
+        font-size: 28px;
+        line-height: 1;
+    }
+    .contribution-content h4 {
+        font-size: 24px;
+    }
+    .contribution-content h5 {
+        font-size: 18px;
+    }
+    .contribution-content h6 {
+        font-size: 16px;
+    }
+}
+
+.contribution-content h2 {
+    font-size: 54px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 30px 0;
+}
+.contribution-content h3 {
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 30px 0;
+}
+.contribution-content h4 {
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 20px 0;
+}
+.contribution-content h5 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 20px 0;
+}
+.contribution-content h6 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color:#00b4d9 ;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 20px 0;
+}
+.contribution-content p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 0 0 12px 0;
+}
+.contribution-content ul {
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contribution-content li {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 0 0 12px 0;
+}
+
+.contribution-content a {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    word-break: break-word;
+    hyphens: auto;
+    margin: 0 0 12px 0;
+}
+
+@media (max-width: 992px) {
+    .contribution-content ul {
+        margin-left: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
