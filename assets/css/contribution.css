@@ -3,6 +3,12 @@
     background-size: cover;
 }
 
+.pattern-lab .hero-area-bg {
+    background: url(../img/dplab.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 @media (max-width: 992px) {
     .contribution--guide .hero-area-bg {
          margin-top: 100px;
@@ -198,24 +204,18 @@
     font-size: 54px;
     font-family: 'Open Sans', sans-serif;
     color:#00b4d9 ;
-    word-break: break-word;
-    hyphens: auto;
-    margin: 30px 0;
+    margin: 45px 0 30px 0;
 }
 .contribution-content h3 {
     font-size: 45px;
     font-family: 'Open Sans', sans-serif;
     color:#00b4d9 ;
-    word-break: break-word;
-    hyphens: auto;
-    margin: 30px 0;
+    margin: 45px 0 30px 0;
 }
 .contribution-content h4 {
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
     color:#00b4d9 ;
-    word-break: break-word;
-    hyphens: auto;
     margin: 20px 0;
 }
 .contribution-content h5 {
@@ -224,21 +224,17 @@
     color:#00b4d9 ;
     word-break: break-word;
     hyphens: auto;
-    margin: 20px 0;
-}
+    margin: 30px 0 20px 0;
+} 
 .contribution-content h6 {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
     color:#00b4d9 ;
-    word-break: break-word;
-    hyphens: auto;
     margin: 20px 0;
 }
 .contribution-content p {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    word-break: break-word;
-    hyphens: auto;
     margin: 0 0 12px 0;
 }
 .contribution-content ul {
@@ -252,6 +248,10 @@
     word-break: break-word;
     hyphens: auto;
     margin: 0 0 12px 0;
+}
+
+.contribution-content img {
+    margin: 12px 0 15px 0;
 }
 
 .contribution-content a {
