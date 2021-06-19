@@ -1458,6 +1458,32 @@ p.dark.dark-active-back {
   font-weight: bold;
 }
 
+ #bem--naming_result2 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+#bem--naming_result1{
+  margin-top: 20px;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.dark-body #bem--naming_result {
+  color: white;
+}
+
+.dark-body #bem--naming_result1 {
+  color: white;
+}
+
+.dark-body #bem--naming_result2 {
+  color: white;
+}
+
 .bem--introduction h4 {
   margin-top: 30px;
   font-size: 42px;
@@ -1499,10 +1525,6 @@ p.dark.dark-active-back {
 
 .dark-body input {
   background-color: #26242E;
-  color: white;
-}
-
-.dark-body #bem--naming_result {
   color: white;
 }
 
