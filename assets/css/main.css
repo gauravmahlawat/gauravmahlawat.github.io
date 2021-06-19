@@ -20,6 +20,10 @@ body {
   transition: background 0.8s ease-in-out;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4 {
   font-size: 38px;
   font-weight: 700;
@@ -1310,4 +1314,94 @@ p.dark.dark-active-back {
 .dark-body .crescent {
   transform: scale(1.1);
   background: #26242E;
+}
+
+
+
+// blogs page
+
+.blogs--page .hero-area-bg {
+  background: url(../img/blogs.jpeg) no-repeat;
+  background-size: cover;
+}
+
+.blogs--page .recent--post-image{
+  overflow: hidden;
+}
+
+.blogs--page .recent--post-image img {
+  object-fit: cover;
+  height: 190px;
+  transition: all 0.4s ease-in-out;
+}
+
+.blogs--page .recent--post-image img:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.15);
+}
+
+.blogs--page .card--title a{
+  color: black;
+}
+
+@media (max-width: 991px){
+  .blogs--page .card--title a{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px){
+  .blogs--page .card--title a{
+    margin-top: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.dark-body.blogs--page .card--title a{
+  color: white;
+}
+
+.blogs--page .card--title a:hover {
+  color: #00b4d9;
+}
+
+.blogs--page .card--subtitle{
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+.blogs--page .load--more{
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 18px;
+  color: #454545;
+  padding: 6px 20px;
+  border: 2px solid #454545;
+}
+
+.dark-body.blogs--page .load--more{
+  color: white;
+  border: 2px solid white;
+}
+
+.blogs--page .load--more:hover {
+  color: white;
+  background-color: #00b4d9;
+  border: 2px solid #00b4d9;
+}
+
+
+.blog--page__start {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.recent--post-card {
+  margin-top: 60px;
 }
