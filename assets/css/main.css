@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 html {
   overflow-x: hidden;
 }
@@ -1402,4 +1404,152 @@ p.dark.dark-active-back {
 
 .recent--post-card {
   margin-top: 60px;
+}
+
+.bem--page .bem--input {
+  width: 100%;
+  border-bottom: 2px solid #9b9b9b;
+  border-top: none;
+  padding: 4px 6px;
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.bem--page .bem--input::placeholder {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.bem--page .card--title {
+  color: black;
+  font-size: 42px;
+}
+
+.dark-body.bem--page .card--title {
+  color: white;
+}
+
+.bem--generate_btn {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #454545;
+  padding: 6px 30px;
+  border: 2px solid #454545;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.bem--generate_btn:hover {
+  color: white;
+  background-color: #00b4d9;
+  border: 2px solid #00b4d9;
+}
+
+#bem--naming_result {
+  margin-top: 20px;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.bem--introduction h4 {
+  margin-top: 30px;
+  font-size: 42px;
+  color: black;
+}
+
+.bem--introduction p {
+  font-size: 20px;
+}
+
+.bem--tag p {
+  display: inline-block;
+  background: #f4f5f6;
+  padding: 0px 7px;
+  border-radius: 10px;
+  color: #00b4d9;
+  font-size: 16px;
+  margin: 4px 10px 4px 0;
+}
+
+.bem--example h5{
+  font-size: 28px;
+  font-family: Roboto;
+}
+
+.bem-exp {
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.bem--introduction h4:nth-child(1) {
+  margin-top: 0;
+}
+
+.dark-body .bem--introduction h4 {
+  color: white;
+}
+
+.dark-body input {
+  background-color: #26242E;
+  color: white;
+}
+
+.dark-body #bem--naming_result {
+  color: white;
+}
+
+.bem--introduction img {
+  margin-top: 30px;
+}
+
+.bem--introduction li {
+  list-style-type: disc;
+  font-size: 20px;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 0 12px 0;
+}
+
+@media (max-width: 767px){
+  .bem--page .bem--input {
+    margin-bottom: 10px;
+  } 
+}
+
+@media (max-width: 767px){
+  .bem--page .card--title {
+    font-size: 34px;
+  } 
+
+  .bem--page .head-title {
+    letter-spacing: 0px !important;
+    font-size: 28px !important;
+    text-transform: none !important;
+  }
+
+  .bem--page .hero-area-bg {
+    background: url(../img/bem-banner.png) no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+  }
+
+  .bem--example {
+    margin-top: 16px;
+  }
+}
+
+.bem--introduction ul {
+  margin: 0 20px;
+}
+
+.bem--page .hero-area-bg {
+  background: url(../img/bem-banner.png) no-repeat;
+  background-size: cover;
 }
