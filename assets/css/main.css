@@ -1407,6 +1407,7 @@ p.dark.dark-active-back {
 }
 
 .bem--page .bem--input {
+  border-radius: 0;
   width: 100%;
   border-bottom: 2px solid #9b9b9b;
   border-top: none;
