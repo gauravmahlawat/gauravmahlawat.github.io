@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <p style="margin-top: 20px; font-size: 18px;">Click the button to generate BEM naming conventions</p>
+            <p style="margin-top: 20px; font-size: 18px;">Click the button to generate suggestions for BEM naming conventions</p>
 
             <button class="bem--generate_btn" onclick="myFunction()">Generate</button>
 
@@ -197,8 +197,10 @@
 
             var bem = "BEM: ".concat( block, "--", element, "-", modifier);
             document.getElementById("bem--naming_result").innerHTML = bem;
+
             var bem2 = "BEM: ".concat( block, "__", element, "--", modifier);
             document.getElementById("bem--naming_result1").innerHTML = bem2;
+
             var bem3 = "BEM: ".concat( block, "--", element, "__", modifier);
             document.getElementById("bem--naming_result2").innerHTML = bem3;
             }
