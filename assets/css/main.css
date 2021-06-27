@@ -1576,3 +1576,38 @@ p.dark.dark-active-back {
   background: url(../img/bem-banner.png) no-repeat;
   background-size: cover;
 }
+
+.featured-label {
+  color: black;
+  font-size: 54px;
+  margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .featured-label {
+    font-size: 44px;
+  }
+}
+
+.dark-body {
+  color: white;
+}
+
+.featured--read-more {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.blogs--page .recent--post-card{
+  border: 1px solid transparent;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogs--page .recent--post-card:hover{
+  border: 1px solid #f4f4f4;
+  box-shadow: 0 0 30px #ededed;
+  padding: 20px 0;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
