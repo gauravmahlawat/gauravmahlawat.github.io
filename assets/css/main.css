@@ -1611,3 +1611,15 @@ p.dark.dark-active-back {
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
+
+.seo-h1 {
+  display: none;
+}
+
+.head-title span {
+  color: #00b4d9;
+}
+
+.script-font {
+  color: #00b4d9;
+}
