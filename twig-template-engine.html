@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> Twig template engine | TWIG usuage for Beginners by Gaurav Mahlawat</title>
+    <link rel="canonical" href="https://gauravmahlawat.github.io/twig-template-engine.html"/>
+    <meta name="description" content=" Twig template engine, Twig operators, Twig syntax, Twig filters by Gaurav mahlawat"/>
+    <meta name="robots" content="all" />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $("#twig-custom-input").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#twig-custom-search *").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+        </script>
+
+
+  </head>
+  <body class=" twig--page">
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-menu"></span>
+                <span class="icon-menu"></span>
+                <span class="icon-menu"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><h4>Gaurav</h4></a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hero-area">
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                    About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">
+                    Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">
+                    Resume
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                    Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+                </li>
+                </ul>
+            </div>
+    
+            <div class="switch">
+                <div class="toggle">
+                <div class="names">
+                    <div class="light-top">
+                    <p class="light">Light</p>
+                    <div class="switch-case"></div>
+                    <p class="dark">Dark</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="ml-3">
+                <div class="circle">
+                <div class="crescent"></div> 
+                <!-- https://codepen.io/demilad/pen/bZRjpb -->
+                </div>
+            </div>
+            </div>
+    
+            <!-- Mobile Menu Start -->
+            <ul class="onepage-nev mobile-menu">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">about</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#resume">resume</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li >
+                <a href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+            </li>
+            </ul>
+            <!-- Mobile Menu End -->
+        </nav>
+        <!-- Navbar End -->
+    
+        <!-- Hero Area Start -->
+        <div id="hero-area" class="hero-area-bg">
+            <div class="overlay"></div>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                <div class="contents">
+                    <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Introduction to <span style="color: #00b4d9;">Twig template engine</span></h2>
+                    <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                    <li>
+                        <a class="twitter" target="_blank" href="https://www.drupal.org/u/gauravmahlawat"><i class="fa fa-drupal"></i></a>
+                    </li>
+                    <li>
+                        <a class="google" target="_blank" href="https://github.com/gauravmahlawat"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/gaurav-mahlawat-346775149"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    </ul>
+                    <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                    <a href="mailto:gauravmahlawat@gmail.com" class="btn btn-common">Get a Quote</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Hero Area End -->
+    
+        </header>
+        <!-- Header Area wrapper End -->
+
+        <div class="container blog--page__start twig--page-body bem--page" id="twig-custom-search">
+            <div class="col-lg-6 col-md-12 col-sm-12 p-0 d-block">
+            <input id="twig-custom-input" type="text" placeholder="Search here for Twig Filters">
+            </div>
+
+            <section class="section-padding">
+                <h4>
+                    Introduction to Twig templating engine
+                </h4>
+                <p>
+                    Twig is a template engine for the PHP programming language. Its syntax originates from Jinja and Django templates. It's an open source product licensed under a BSD License and maintained by Fabien Potencier. The initial version was created by Armin Ronacher. Symfony PHP framework comes with a bundled support for Twig as its default template engine since version 2.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Fast:</strong>
+                        Twig compiles templates down to plain optimized PHP code. The overhead compared to regular PHP code was reduced to the very minimum.
+                    </li>
+
+                    <li>
+                        <strong>Secure:</strong>
+                        Twig has a sandbox mode to evaluate untrusted template code. This allows Twig to be used as a template language for applications where users may modify the template design.
+                    </li>
+
+                    <li>
+                        <strong>Flexible:</strong>
+                        Twig is powered by a flexible lexer and parser. This allows the developer to define its own custom tags and filters, and create its own DSL.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section-padding">
+                <h4>
+                    Why yet another templating engine?
+                </h4>
+
+                <p>
+                    When it comes to template engines in PHP, many people will tell you that PHP itself is a template engine. But even if PHP started its life as a template language, it did not evolve like one in the recent years. As a matter of fact, it doesn't support many features modern template engines should have nowadays.
+                </p>
+
+                <h5><strong>Old:</strong>​</h5>
+                <code>  print render($content); </code>
+
+                <h5><strong>New:​</strong></h5>
+                <code>{{ content }} </code>
+
+                <p>Twig--> compile (symphony)--> PHP code: Symphony compiles twig syntax to php code</p>
+            </section>
+
+            <section class="section-padding">
+                <h4>
+                    Syntax
+                </h4>
+                <ul>
+                    <li>Twig defines three kinds of delimiters:</li>
+                    <li><code>{{ ... }}</code>, to print the content of variables or the result of evaluating an expression (e.g.: an inherited Twig template with <code>{{ parent() }}</code>).   print/echo something </li>
+                    <li><code>{# ... #}</code>, to add comments in the templates. These comments aren't included in the rendered page.</li>
+                    <li><code>{% ... %}</code>,to execute statements, such as for-loops. do something. (set var, condition).</br>
+                        <h5><strong>Setting condition Example</strong></h5>
+                        <code>
+                            {% if label %}​ </br>
+                            {{ label }}</br>
+                            {% endif %}</code>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section-padding">
+                <h4>
+                    Inheritance​
+                </h4>
+                <p>“The most powerful part of Twig is template inheritance” – Sensiolabs​</p>
+
+                <ul>
+                    Drupal 8 + Twig integration eliminates the need for copying and pasting base or parent theme template files into your custom templates. Similarly to how Sass and Less simplifies your CSS workflow with the @extend directive, Twig will drastically cut down the amount of template files and code you need to organize your theme.​
+                    <li><code>{% include "@molecules/slidercard/upcomingevent.twig" with {  ... }  %}</code></li>
+                    <li><code>{% embed ''@molecules/slidercard/upcomingevent.twig'' %}</code></li>
+                    <li><code>{% extends "themes/sub_bartik/templates/node.html.twig" %}</code> </li>
+
+                    <img class="inheritence-img" src="./assets/img/inheritence.png" alt="ffd">
+                </ul>
+            </section>
+
+            <section class="section-padding">
+                <h4>Operators precedence</h4>
+                <p>The operators precedence is, from the less to more priority:</p>
+
+                <table class="table mt-4">
+                    <thead>
+                      <tr>
+                        <th scope="col">Operator</th>
+                        <th scope="col">Role</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">b-and</th>
+                        <td>Bitwise AND</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">b-xor	</th>
+                        <td>Bitwise XOR</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">b-or</th>
+                        <td>Bitwise OR </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">or</th>
+                        <td>Or </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">and</th>
+                        <td>And</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">==	</th>
+                        <td>Is equal?</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">!=</th>
+                        <td>Is different?</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"> < </th>
+                        <td>Inferior</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"> > </th>
+                        <td>Superior</td>
+                      </tr><tr>
+                        <th scope="row">>=	</th>
+                        <td>Superior or equal </td>
+                      </tr><tr>
+                        <th scope="row"><=	</th>
+                        <td>Inferior or equal</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">in</th>
+                        <td>into</td>
+                      </tr><tr>
+                        <th scope="row">matches	</th>
+                        <td>Corresponds</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">starts with	</th>
+                        <td>Begins by                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ends with	</th>
+                        <td>Finishes by
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">..</th>
+                        <td>Sequence (ex: 1..5)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">+</th>
+                        <td>Plus </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">-</th>
+                        <td>Less</td>
+                      </tr><tr>
+                        <th scope="row">~</th>
+                        <td>Concatenation
+                        </td>
+                      </tr><tr>
+                        <th scope="row">*</th>
+                        <td>Multiplication </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">/</th>
+                        <td>Division</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">//</th>
+                        <td>Division rounded to lower</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">%</th>
+                        <td>Modulo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">is	</th>
+                        <td>Test (ex: is defined or is not empty)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">**	</th>
+                        <td>Power</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">|</th>
+                        <td>filter </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">[]	</th>
+                        <td>Array entry
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">.</th>
+                        <td>Attribute or method from an object (ex: country.name)
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+
+            <section class="section-padding">
+                <h4>
+                    Filters
+                </h4>
+                <p>
+                    Filters in Twig allow you to modify a variable's data before you use it. The most common use is to apply the filter when you are outputting the content. For example:
+                </p>
+                <code>{{ post.postTitle|title }} </code>
+                <p>You can also apply filters when you assign a variable's value to another variable. Below is a simple example:</p>
+                <code>{% set firstCategory = post.categories|first %}</code>
+
+                <div class="twig-filter">
+                    <h6>
+                        abs
+                    </h6>
+                    <p class="code">
+                        {{ variable|abs }}
+                    </p>
+                    <p>
+                        Returns an absolute value for a number.
+                        For example, if a variable called number holds a value of -5 then {{ number|abs }} would output 5.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        base64_decode
+                    </h6>
+                    <p class="code">
+                        {{ value|base64_decode }}
+                    </p>
+                    <p>
+                        Decodes a base64 encoded value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        base64_encode
+                    </h6>
+                    <p class="code">
+                        {{ value|base64_encode }}
+                    </p>
+                    <p>
+                        Base 64 encodes a value. The value must be a string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        batch
+                    </h6>
+                    <p class="code">
+                        {% for row in items|batch(3, 'No item') %} </br>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        The batch filter breaks up an array into groups of arrays with the given number of items.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        camel
+                    </h6>
+                    <p class="code">
+                        {{ variable|camel }}
+                    </p>
+                    <p>
+                        Takes a series of words and camel cases them.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        capitalize
+                    </h6>
+                    <p class="code">
+                        {{ variable|capitalize }}
+                    </p>
+                    <p>
+                        Changes the first letter of the value to be uppercase. All other characters will be lower case.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        ceiling
+                    </h6>
+                    <p class="code">
+                        {{ number|ceiling }}
+                    </p>
+                    <p>
+                        Rounds up a number.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        country_abbreviation
+                    </h6>
+                    <p class="code">
+                        {{ variable|country_abbreviation }}
+                    </p>
+                    <p>
+                        Gets the 2 letter country abbreviation for the variable value if the variable value is a valid country or country abbreviation.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        country_data
+                    </h6>
+                    <p class="code">
+                        {% set data = variable|country_data %}
+                    </p>
+                    <p>
+                        Gets an array of country data for the variable value if the variable value is a valid country or country abbreviation.
+
+                        The array contains the following information:
+                        abbreviation: the 2 letter country abbreviation
+                        name: the full country name
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        country_name
+                    </h6>
+                    <p class="code">
+                        {{ variable|country_name }}
+                    </p>
+                    <p>
+                        Gets the full country name for the variable value if the variable value is a valid country or country abbreviation.
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        date
+                    </h6>
+                    <p class="code">
+                        {{ post.publishedOnTimestamp|date('M d, Y') }}
+                    </p>
+                    <p>
+                        Formats a date to a given format.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        date_diff
+                    </h6>
+                    <p class="code">
+                        {{ post.createdOnTimestamp|time_ago }}
+                    </p>
+                    <p>
+                        Gets the difference between now (or a passed date) and the date value the filter is applied to.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        batch
+                    </h6>
+                    <p class="code">
+                        {% for row in items|batch(3, 'No item') %} </br>
+                        {% endfor %}
+                    </p>
+                    <p>
+                        The batch filter breaks up an array into groups of arrays with the given number of items.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        date_modify
+                    </h6>
+                    <p class="code">
+                        {{ post.publishedOnTimestamp|date_modify('+ 1 day')|date('m/d/Y') }}
+                    </p>
+                    <p>
+                        Modifies a date based on the passed modifier.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        debug
+
+                    </h6>
+                    <p class="code">
+                        
+                        {{ post|debug }} </br>
+
+                        {{ form.fields|debug('Form fields') }}
+                    </p>
+                    <p>
+                        Outputs the results of a variable in a debug statement. Useful for development.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        debug_email
+                    </h6>
+                    <p class="code">
+                        
+                        {{ form.fields|debug_email }} </br>
+
+                        {{ form.fields|debug_email('Form fields') }}
+                    </p>
+                    <p>
+                        Outputs the results of a variable in a debug statement specifically formatted for using in emails. Useful when developing form notification emails.
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        default
+                    </h6>
+                    <p class="code">
+                        {{ variable|default('My Default Value') }}
+                    </p>
+                    <p>
+                        Returns the passed default value if the variable is undefined or empty, otherwise, it returns the variable value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        embed_media
+                    </h6>
+                    <p class="code">
+                        {{ variable|embed_media }}
+                    </p>
+                    <p>
+                        Takes a string and looks for any URLs for embeddable resources (YouTube videos for example) and using the oEmbed protocol converts the URL into the appropriate embed code.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        escape
+                    </h6>
+                    <p class="code">
+                        {{ variable|escape }}
+                    </p>
+                    <p>
+                        Escapes a string for final output. Useful for user-entered data where you're not sure that the data is safe.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        escape_quotes
+
+                    </h6>
+                    <p class="code">
+                        {{ variable|escape_quotes }} </br>
+
+                        {{ variable|escape_quotes('single') }} </br>
+
+                        {{ variable|escape_quotes('double') }}
+                    </p>
+                    <p>
+                        Escapes single and double quotes with a backslash "\". By default it will escape both double and single quotes but you can specify which one you want to escape.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        file_basename
+
+                    </h6>
+                    <p class="code">
+                        {{ '/path/to/my/file.pdf'|file_basename }}
+                    </p>
+                    <p>
+                        Parses the file path and returns just the basename value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        file_dirname
+                    </h6>
+                    <p class="code">
+                        {{ '/path/to/my/file.pdf'|file_dirname }}
+                    </p>
+                    <p>
+                        Parses the file path and returns just the dirname value.
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        file_name
+                    </h6>
+                    <p class="code">
+                        {{ '/path/to/my/file.pdf'|file_name }}
+                    </p>
+                    <p>
+                        Parses the file path and returns just the filename value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        date_modify
+                    </h6>
+                    <p class="code">
+                        link rel="icon" type="image/png" href="{{ 'favicon.ico'|file_url }}"
+                    </p>
+                    <p>
+                        Prepends the CDN or S3 URL of the file to the file path. 
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        first
+                    </h6>
+                    <p class="code">
+                        Returns the first value of an array, hash or string.
+                    </p>
+                    <p>
+                        {{ [1, 2, 3, 4]|first }}
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        float
+                    </h6>
+                    <p class="code">
+                        {{ variable|float }}
+                    </p>
+                    <p>
+                        Converts the value to a float number.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        floor
+                    </h6>
+                    <p class="code">
+                        {{ number|floor }} </br>
+
+                        {{ number|floor(2) }}
+                    </p>
+                    <p>
+                        Rounds a number down. You can also specify a precision.
+
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        format
+                    </h6>
+                    <p class="code">
+                        {{ 'I like %s and %s'|format('icecream', 'pickles') }}
+                    </p>
+                    <p>
+                        Formats a string by replacing the placeholders with the specified values.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        html2text
+                    </h6>
+                    <p class="code">
+                        {{ htmlVariable|html2text }}
+                    </p>
+                    <p>
+                        Converts an HTML string to plain text.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        html_entities
+                    </h6>
+                    <p class="code">
+                        {{ '<p><b>All</b> HTMl code will be converted</p>'|html_entities }}
+
+                    </p>
+                    <p>
+                        Converts HTML entities to their entity value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        html_special_characters
+
+                    </h6>
+                    <p class="code">
+                        {{ 'Only &, <, >, " and \' will be converted'|html_special_chars }}
+                    </p>
+                    <p>
+                        Converts only special characters to their HTML entity. (& " ' < >)
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        inject_html
+                    </h6>
+                    <p class="code">
+                        {{ post.abstract|inject_html(' a href="' ~ post.url ~ '">Read more /a>') }}
+                    </p>
+                    <p>
+                        Inserts an HTML snippet immediately before a closing block level tag (p div) or a closing span tag </span> if they are the last HTML tag in the variable value. If they are not then the HTML snippet is simply appended to the variable value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        integer
+                    </h6>
+                    <p class="code">
+                        {{ variable|integer }}
+                    </p>
+                    <p>
+                        Converts the value to an integer.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        intersect
+                    </h6>
+                    <p class="code">
+                        {% set myPets = ['dog', 'cat', 'snake', 'elephant', 'fish'] %} </br>
+{% set yourPets = ['snake', 'camel', 'fish', 'shark'] %}</br>
+{% set samePets = myPets|intersect(yourPets) %}
+                    </p>
+                    <p>
+                        Returns an array containing only the values that are in both arrays.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        intersect_assoc
+                    </h6>
+                    <p class="code">
+                        {% set myColors = {'g': 'green', 'b': 'blue', 'y': 'yellow', 'r': 'red'} %}</br>
+{% set yourColors = {'b': 'brown', 'g': 'green', 'x': 'yellow'} %}</br>
+{% set sameColors = myColors|intersect_assoc(yourColors) %}
+                    </p>
+                    <p>
+                        Returns an array containing only the values that are in both arrays. The array keys are also used in the comparison.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        join
+                    </h6>
+                    <p class="code">
+                        {{ array|join(' | ') }}
+                    </p>
+                    <p>
+                        Concatenates the values of an array into a string, optionally separated by the passed separator.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        json
+                    </h6>
+                    <p class="code">
+                        {{ {'fruit': 'apple', 'vegetable': 'lettuce'}|json }}
+                    </p>
+                    <p>
+                        Encodes the value as a complete JSON string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        json_decode
+
+                    </h6>
+                    <p class="code">
+                        {% set data = jsonString|json_decode %}
+                    </p>
+                    <p>
+                        Converts a JSON string into an array of values.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        json_encode
+
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|json_encode }}
+                    </p>
+                    <p>
+                        Returns the JSON representation of a value.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        kebab
+                    </h6>
+                    <p class="code">
+                        {{ "Bob Smith"|kebab }}
+                    </p>
+                    <p>
+                        Takes a string and creates a lowercase version of it with words separated by dashes instead of spaces. Useful for creating anchor links.
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        keys
+
+                    </h6>
+                    <p class="code">
+                        {% for key in array|keys %} </br>
+{% endfor %}
+                    </p>
+                    <p>
+                        Returns the keys of an array.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        kintersect
+                    </h6>
+                    <p class="code">
+                        {% set myColors = {'blue': '5', 'red': '15', 'green': '2'} %} </br>
+{% set yourColors = {'red': '2', 'black': '3', 'green': '30'} %}</br>
+{% set same = myColors|kintersect(yourColors) %}
+                    </p>
+                    <p>
+                        Returns an array containing only the values that are in the first array whose keys are also in the second array. The values are not compared.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        kmerge
+
+                    </h6>
+                    <p class="code">
+                        {% set array = {1: 'One', 2: 'Two', 3: 'Three', 'four': 'Four string'} %} </br>
+{% set array2 = {1: 'One2', 2: 'Two2', 4: 'Four', 5: 'Five'} %}</br>
+{% set array = array|kmerge(array2) %}
+                    </p>
+                    <p>
+                        Merges two arrays together while preserving their keys (including numeric keys).
+                    </p>
+                </div>
+
+
+                <div class="twig-filter">
+                    <h6>
+                        kmerge_deep
+
+                    </h6>
+                    <p class="code">
+                        {% set array = {1: 'One', 2: 'Two', 3: ['Three', 'Three is great'], 'four': 'Four string', 'five': {32: 'numeric key', 'string': 'string key'}} %}</br>
+{% set array2 = {2: 'New Two', 3: ['Another three'], 'four': 'New Four string', 'five': {32: 'new numeric key'}, 'six': 'I will stay'} %}</br>
+{% set array = array|kmerge_deep(array2) %}
+                    </p>
+                    <p>
+                        Merges two arrays together recursively while preserving their keys (including numeric keys).
+
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        krsort
+                    </h6>
+                    <p class="code">
+                        {% set array = array|krsort %}
+
+
+                    </p>
+                    <p>
+                        Sorts an array or hash by its keys in reverse order (Z-A).
+
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        ksort
+
+                    </h6>
+                    <p class="code">
+                        {% set array = array|ksort %}
+                    </p>
+                    <p>
+                        Sorts an array or hash by its keys.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        last
+                    </h6>
+                    <p class="code">
+                        {{ [1, 2, 3, 4]|last }}
+                    </p>
+                    <p>
+                        Returns the last element of an array, hash or string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        lcfirst
+                    </h6>
+                    <p class="code">
+                        {{ variable|lcfirst }}
+                    </p>
+                    <p>
+                        Lowercases the first letter of a string
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        length
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|length }}
+                    </p>
+                    <p>
+                        Returns the number of items in an array or hash, or the length of a string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        length
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|length }}
+                    </p>
+                    <p>
+                        Returns the number of items in an array or hash, or the length of a string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        lower
+                    </h6>
+                    <p class="code">
+                        {{ 'I SHOULD BE LOWERCASE'|lower }}
+                    </p>
+                    <p>
+                        Converts the string value to all lower case.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        ltrim
+                    </h6>
+                    <p class="code">
+                        {{ string|ltrim }}
+                    </p>
+                    <p>
+                        Returns the number of items in an array or hash, or the length of a string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        length
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|length }}
+                    </p>
+                    <p>
+                        Trims the begining of a string for whitespace or a specific character.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        md5
+                    </h6>
+                    <p class="code">
+                        {% set hash = post.postTitle|md5 %}
+                    </p>
+                    <p>
+                        Converts the string to an MD5 hash.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        merge
+
+                    </h6>
+                    <p class="code">
+                        {% set data = ['apple', 'bannana', 'orange']|merge(['grapes', 'pinapple']) %}
+                    </p>
+                    <p>
+                        Merges an array with another array.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        merge_deep
+                    </h6>
+                    <p class="code">
+                        {% set array = {1: 'One', 2: 'Two', 3: ['Three', 'Three is great'], 'four': 'Four string', 'five': {32: 'numeric key', 'string': 'string key'}} %} </br>
+{% set array2 = {1: 'One2', 2: 'Two2', 4: 'Four', 5: 'Five'} %}</br>
+{% set array = array|merge_deep(array2) %}
+                    </p>
+                    <p>
+                        Merges two arrays together recursively.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        number_format
+
+                    </h6>
+                    <p class="code">
+                        {{ 3024.2|number_format(2) }}
+                    </p>
+                    <p>
+                        Formats a number to have a certain number of decimal points, a specific decimal point character, and thousands separator.
+
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        pascal
+                    </h6>
+                    <p class="code">
+                        {{ variable|pascal }}
+                    </p>
+                    <p>
+                        Takes a series of words and PascalCases them.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        raw
+
+                    </h6>
+                    <p class="code">
+                        {% autoescape %} </br>
+    {{ var|raw }}</br>
+{% endautoescape %}
+                    </p>
+                    <p>
+                        Marks a value as "safe" meaning it won't be auto escaped.
+
+
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        regex_filter
+
+                    </h6>
+                    <p class="code">
+                        {% set new = ['x', 'y', 'z', 'm', 'e', '3', '10']|regex_filter(['/\\d/', '/[x-z]/'], ['$0 is a NUMBER ', '$0 is a LETTER ']) %}
+                    </p>
+                    <p>
+                        Replaces values within a string by a regular expression and returns only the (possibly transformed) subjects where there was a match.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        replace
+                    </h6>
+                    <p class="code">
+                        {{ 'I like %this% and %that%.'|replace({'%this%': 'apples', '%that%': 'bananas'}) }} </br>
+
+{{ variable|replace({'-': '%ndash;'}) }}</br>
+
+{{ 'Hi my name is Bob'|replace('Bob', 'Sam') }}
+                    </p>
+                    <p>
+                        Replaces the specified text or placeholders with other values.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        reverse
+                    </h6>
+                    <p class="code">
+                        {% for post in posts|reverse %} </br>
+{% endfor %}
+                    </p>
+                    <p>
+                        Reverses an array, hash or string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        shuffle
+                    </h6>
+                    <p class="code">
+                        {% set newValue = value|shuffle %}
+                    </p>
+                    <p>
+                        Randomizes the order of elements in an array.\ and returns the result.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        slice
+                    </h6>
+                    <p class="code">
+                        {% for i in [1, 2, 3, 4]|slice(1, 2) %} </br>
+{% endfor %}
+                    </p>
+                    <p>
+                        Extracts a slice of an array, hash or string.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        sort
+                    </h6>
+                    <p class="code">
+                        {% set array = array|sort %}
+                    </p>
+                    <p>
+                        Sorts an array.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        striptags
+                    </h6>
+                    <p class="code">
+                        {{ post.abstract|striptags }}
+                    </p>
+                    <p>
+                        Strips HTML tags from the string. The striptags filter strips SGML/XML tags and replace adjacent whitespace by one space.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        t
+                    </h6>
+                    <p class="code">
+                        {{ 'Hello Stack Exchange!'|t }}
+                    </p>
+                    <p>
+                        The t filter only allows for simple strings transalations.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        trans
+                    </h6>
+                    <p class="code">
+                        {% trans %}Hello {{ user.name }}, today's date is {{ date|placeholder }}.{% endtrans %}
+                    </p>
+                    <p>
+                        %trans block allows the use of dynamic placeholders in the string. Much like using the php t() function.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        text2html
+                    </h6>
+                    <p class="code">
+                        {{ post.plainDescription|text2html }}
+                    </p>
+                    <p>
+                        Converts a plain-text string to HTML characters. Newline characters are converted to <br> tags. URL are also converted to links.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        theme_url
+                    </h6>
+                    <p class="code">
+                        link rel="stylesheet" href="{{ 'css/index.css'|theme_url }}"
+                    </p>
+                    <p>
+                        Prepends the URL of the theme asset with the theme path. This is useful when using images, CSS or Javascript theme assets in the theme templates. It ensure that if the path to the theme changes then the links to the theme assets won't be broken.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        time
+                    </h6>
+                    <p class="code">
+                        {{ post.publishedOnTimestamp|time('H:i A') }}
+                    </p>
+                    <p>
+                        Formats a timestamp to a given time format.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        title
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|title }}
+                    </p>
+                    <p>
+                        Converts a string to have the first letter of each word capitalized and all other characters lower case.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        truncate
+                    </h6>
+                    <p class="code">
+                        {{ var|truncate(20) }}
+                    </p>
+                    <p>
+                        Shortens a string to the specified length. This does not take HTML tags into consideration.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        truncate_html
+                    </h6>
+                    <p class="code">
+                        {{ post.content|truncate_html(100) }}
+                    </p>
+                    <p>
+                        Shortens a string to a specified length and ensures that the HTML does not get broken.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        unique
+                    </h6>
+                    <p class="code">
+                        {% set unique = arrayVariable|unique %}
+                    </p>
+                    <p>
+                        Gets the unique values from an array.
+                    </p>
+                </div>
+
+                <div class="twig-filter">
+                    <h6>
+                        upper
+                    </h6>
+                    <p class="code">
+                        {{ post.postTitle|upper }}
+                    </p>
+                    <p>
+                        Converts a string so that all characters are uppercase. 
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+
+
+
+        <!-- Footer Section Start -->
+        <footer class="footer-area section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+              <h4 class="text-center" style="color: white;">Our Visitors: 
+                <img src="https://hitwebcounter.com/counter/counter.php?page=7744331&style=0001&nbdigits=5&type=page&initCount=0" title="Visit Counter" Alt="web counter"   border="0" />
+              </h4>
+                <ul class="social-icon">
+                  <li>
+                    <a class="twitter" target="_blank" href="https://www.drupal.org/u/gauravmahlawat"><i class="fa fa-drupal"></i></a>
+                  </li>
+                  <li>
+                    <a class="google" target="_blank" href="https://github.com/gauravmahlawat"><i class="fa fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/gaurav-mahlawat-346775149"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i class="fa fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+                <p>Copyright © Gaurav All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- hitwebcounter Code START -->
+      </footer>
+      <!-- Footer Section End -->
+  
+      <!-- Go to Top Link -->
+      <a href="#" class="back-to-top">
+        <i class="icon-arrow-up"></i>
+      </a>
+  
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="assets/js/jquery-min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.mixitup.js"></script>
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/wow.js"></script>
+      <script src="assets/js/jquery.nav.js"></script>
+      <script src="assets/js/jquery.easing.min.js"></script>  
+      <script src="assets/js/nivo-lightbox.js"></script>
+      <script src="assets/js/jquery.slicknav.js"></script>
+      <script src="assets/js/main.js"></script>
+        
+    </body>
+  </html>
+  

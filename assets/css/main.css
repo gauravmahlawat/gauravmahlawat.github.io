@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 html {
   overflow-x: hidden;
@@ -83,6 +83,12 @@ ul li, ol li {
   color: #e6e6e6;
   line-height: 45px;
   letter-spacing: 0.1rem;
+}
+
+.twig--page .hero-area-bg {
+  background: url(../img/twig.png) no-repeat;
+  background-size: cover;
+  margin-top: 120px;
 }
 
 .section-titile-bg {
@@ -1563,6 +1569,12 @@ p.dark.dark-active-back {
     margin-top: 120px;
   }
 
+  .twig--page .hero-area-bg {
+    background: url(../img/twig.png) no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+  }
+
   .bem--example {
     margin-top: 16px;
   }
@@ -1575,6 +1587,12 @@ p.dark.dark-active-back {
 .bem--page .hero-area-bg {
   background: url(../img/bem-banner.png) no-repeat;
   background-size: cover;
+}
+
+.twig--page .hero-area-bg {
+  background: url(../img/twig.png) no-repeat;
+  background-size: cover;
+  margin-top: 120px;
 }
 
 .featured-label {
@@ -1622,4 +1640,107 @@ p.dark.dark-active-back {
 
 .script-font {
   color: #00b4d9;
+}
+
+.twig--page .hero-area-bg {
+  background: url(../img/twig.png) no-repeat !important;
+  background-size: cover;
+}
+
+.inheritence-img {
+  height: 280px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+.twig-filter h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #659251;
+  font-family: Roboto;
+  margin: 22px 0 16px 0;
+}
+
+.twig-filter .code {
+  background: #f9f9f9;
+  font-family: Roboto;
+    border: 1px solid #E9E9E9;
+    display: block;
+    font-family: Monaco,Courier,serif;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.twig-filter p{
+  font-family: Roboto;
+  margin: 6px 0 14px 0;
+  font-size: 18px;
+}
+
+.twig--page-body .section-padding h4 {
+  font-family: Roboto;
+  font-weight: 600;
+}
+
+.twig--page-body .section-padding li, ul, p{
+  font-family: Roboto;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.twig--page-body p{
+  font-family: Roboto;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.twig--page-body ul{
+  font-family: Roboto;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.dark-body .twig-filter .code {
+  color: black;
+}
+
+.navbar-header li, ul, p {
+  font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.twig--page-body {
+  margin: 50px auto;
+}
+
+#twig-custom-input {
+  display: block !important;
+  width: 100%;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #9b9b9b;
+  border-top: none;
+  padding: 4px 6px;
+  border-left: none;
+  border-right: none;
+  padding-left: 0;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+#twig-custom-input::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  color: black;
+  opacity: 0.6;
+}
+
+.dark-body::placeholder {
+  font-family: Roboto;
+  font-size: 16px;
+  color: white;
 }

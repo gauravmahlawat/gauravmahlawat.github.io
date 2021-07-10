@@ -95,6 +95,7 @@
     $(this).toggleClass("dark-active-back");
     $('.switch-case').toggleClass("dark-active");
     $('body').toggleClass('dark-body');
+    $('.table').toggleClass('table-dark');
   });
 
   $(".light").click(function(){
