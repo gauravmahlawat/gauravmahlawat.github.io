@@ -102,6 +102,7 @@
     $('.dark').removeClass("dark-active-back");
     $('.switch-case').removeClass("dark-active");
     $('body').removeClass('dark-body');
+    $('.table').removeClass('table-dark');
   });
 
 }(jQuery));
