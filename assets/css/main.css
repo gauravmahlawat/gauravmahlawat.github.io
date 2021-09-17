@@ -1744,3 +1744,8 @@ p.dark.dark-active-back {
   font-size: 16px;
   color: white;
 }
+
+.input-themes input{
+  width: 100%;
+  margin-top: 10px;
+}
