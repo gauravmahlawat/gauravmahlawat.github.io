@@ -22,6 +22,17 @@ body {
   transition: background 0.8s ease-in-out;
 }
 
+body.accesibility--page .hero-area-bg{
+    background: url(../img/banner-acc.png) no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  body.accesibility--page .hero-area-bg{
+    background-position: -199px 42px;
+}
+}
+
 img {
   max-width: 100%;
 }
@@ -1748,4 +1759,67 @@ p.dark.dark-active-back {
 .input-themes input{
   width: 100%;
   margin-top: 10px;
+}
+
+.accesibility--page .accessible-items--page li{
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 0 12px 0;
+}
+
+.accesibility--page .accessible-items--page ul{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 0 12px 0;
+}
+
+.accesibility--page .accessible-items--page ol{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 0 12px 0;
+}
+
+.accesibility--page .accessible-items--page p{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  word-break: break-word;
+  hyphens: auto;
+  margin: 0 0 12px 0;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .switch {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .accesibility--page #hero-area .contents .head-title {
+    letter-spacing: 4px;
+    font-size: 30px;
+  }
+}
+
+.accesibility--page:not(.dark-body) .accessible-items--page h1, h2, h3, h4, h5, h6, li, ul, ol, p{
+  color: #000;
+}
+
+.accesibility--page.dark-body li, ol{
+  color: #fff;
+}
+
+.accesibility--page:not(.dark-body) .accessible-items--page ol{
+  color: #000;
+}
+
+.accesibility--page .accessible-items--page a{
+  color: #40a9e2;
 }
