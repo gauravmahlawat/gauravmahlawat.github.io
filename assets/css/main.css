@@ -1823,3 +1823,85 @@ p.dark.dark-active-back {
 .accesibility--page .accessible-items--page a{
   color: #0000AD;
 }
+
+
+.create-custom-theme .input-themes input {
+  width: auto;
+}
+
+.create-custom-theme .input-themes input[type=text] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.create-custom-theme .input-themes select {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.base-theme-wrapper {
+  margin-top: 20px;
+}
+
+.base-theme-wrapper p{
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.theme-version-wrapper {
+  margin-top: 20px;
+}
+
+.theme-version-wrapper p{
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.region-wrapper{
+  margin-top: 30px;
+}
+
+.region-wrapper p{
+  margin: 0 0 8px 0;
+  font-size: 20px;
+}
+
+.region-wrapper input {
+  margin: 12px 0 0 0;
+}
+
+.region-wrapper label {
+  margin: 0 0 0 5px;
+  font-size: 18px;
+}
+
+.info-btn {
+  margin-top: 20px;
+}
+
+.theme-use-case li{
+  list-style: decimal-leading-zero;
+  margin: 10px 0 5px 45px;
+  font-size: 20px;
+}
+
+.theme-use-case {
+  margin-top: 50px;
+  padding: 0 16px;
+}
+
+.dark-body .theme-use-case li{
+  color: white;
+}
