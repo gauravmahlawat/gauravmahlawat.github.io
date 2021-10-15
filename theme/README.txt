@@ -1,5 +1,5 @@
 
-ABOUT STARK
+ABOUT theme
 -----------
 
 This theme is provided for demonstration purposes; it uses Drupal's
