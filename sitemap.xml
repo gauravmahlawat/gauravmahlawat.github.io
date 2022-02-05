@@ -1,47 +1,61 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
 <url>
-<loc>https://gauravmahlawat.github.io/</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://gauravmahlawat.github.io/</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/index.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/index.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/improve-drupal-site-performance.html</loc>
-<lastmod>2022-02-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/create-custom-theme-drupal-9.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/blogs.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/web-accessibility-for-everyone.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/twig-template-engine.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/twig-template-engine.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/integrate-pattern-lab-with-drupal.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://gauravmahlawat.github.io/blogs.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/online-bem-generator.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://gauravmahlawat.github.io/improve-drupal-site-performance.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://gauravmahlawat.github.io/create-custom-theme-drupal-9.html</loc>
-<lastmod>2021-09-17T16:45:05+00:00</lastmod>
-<priority>0.94</priority>
+  <loc>https://gauravmahlawat.github.io/integrate-pattern-lab-with-drupal.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://gauravmahlawat.github.io/online-bem-generator.html</loc>
+  <lastmod>2022-02-05T13:56:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
