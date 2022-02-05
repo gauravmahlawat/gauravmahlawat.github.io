@@ -1980,3 +1980,27 @@ p.dark.dark-active-back {
   margin-bottom: 100px !important;
   margin-top: 0 !important;
 }
+
+.hero-area-bg span {
+  color: #00b4d9 !important;
+}
+
+.hero-area-bg .script-font {
+  color: #00b4d9 !important;
+}
+
+a:hover {
+  color: #00b4d9 !important;
+}
+
+.load--more:hover {
+  color: #fff !important;
+}
+
+.dark-body * {
+  color: #fff !important;
+}
+
+.dark-body .social-icon li a * {
+  color: #000 !important;
+}
