@@ -89,7 +89,16 @@
 
 
 
-  });   
+  });
+
+  // Download resume button click GA event
+  $('.profile-wrapper .btn-common').on('click', function(){
+      gtag('event', 'resume_download', {
+          'event_category': 'Click',
+          'event_label': 'resume_download',
+          'value': 'downloaded',
+      })
+  });
   
   $(".dark").click(function(){
     $(this).toggleClass("dark-active-back");

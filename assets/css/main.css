@@ -2004,3 +2004,7 @@ a:hover {
 .dark-body .social-icon li a * {
   color: #000 !important;
 }
+
+.btn.btn-common {
+background-color: #0b2e30 !important;
+}
