@@ -229,7 +229,7 @@
             //Add some style to the print.
             // ref: https://www.encodedna.com/javascript/print-html-table-with-image-using-javascript.htm 
             let style = "<style>";
-            style = style + "h2 {text-align:center; font:22px Times New Roman; font-weight:bold;}";
+            style = style + "img {width:100%; height: 100px}";
             style = style + ".subject {text-align:center;}";
             style = style + "ul {font:18px Calibri; display:inline-block; list-style:none; margin:0; padding:20px 0;}";
             style = style + ".answers {font:18px Calibri; padding:10px 0;}";
@@ -249,7 +249,7 @@
 
             let sTime = hrs + ':' + min + ':' + sec;
 
-            let header = '<img src="/Users/gaurav/Desktop/gauravmahlawat.github.io/header.png" width="90px" height="70px">' +
+            let header = '<img src="gauravmahlawat.github.io/header.png" width="90px" height="70px">' +
                 '<div class="subject">' + 	document.getElementById("subject").innerHTML + '</div>' +
                 '<ul><li><b>Name of Student</b>: ' + document.getElementById('txtStudentName').value + '</li> ' +
                     '<li><b>Class</b>: ' + document.getElementById('txtClass').value + '</li> ' +
