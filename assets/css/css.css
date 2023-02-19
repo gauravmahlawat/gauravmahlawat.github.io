@@ -1,8 +1,27 @@
 ol li {
     list-style: auto !important;
     font-size: 18px !important;
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 18px !important;
+}
+
+.code {
+    background-color: #202123;
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
+    padding: 15px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.code p{
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
 }
