@@ -865,6 +865,10 @@ display: none;
   position: relative;
 }
 
+a.twitter {
+    display: none !important;
+}
+
 .shot-item img {
   width: 100%;
 }
