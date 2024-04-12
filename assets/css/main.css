@@ -408,6 +408,10 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
 }
 
+.fa-drupal {
+display: none;
+}
+
 .timeline .timelin-title {
   font-size: 20px;
   text-transform: uppercase;
