@@ -746,6 +746,21 @@ display: none;
   background-size: cover;
 }
 
+.hero-area-bg-home {
+  background: url(../img/banner.webp) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-area-bg-home {
+    margin-top: 70px;
+  }
+
+  #hero-area.hero-area-bg-home .contents {
+    padding-block: 110px 50px;
+  }
+}
+
 .hero-area-bg-11 {
   background: url(../img/dr.webp) no-repeat;
   background-size: cover;
