@@ -49,6 +49,45 @@
     gtag('config', 'G-CLE3PEEK3N');
   </script>
 
+  <style>
+    .help-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.help-card-button {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.help-card-button:hover {
+    background-color: #0056b3;
+}
+    </style>
+
 </head>
 
 <body class="create-custom-theme">
@@ -268,6 +307,12 @@
 
       </div>
 
+      <div class="help-card">
+          <h2>Need Help with Your Drupal Theme or Module?</h2>
+          <p>If you need assistance creating a custom Drupal theme or module, feel free to reach out to us. We are here to create it for you!</p>
+          <a href="mailto:gauravmahlawat@gmail.com" class="help-card-button">Write to Us</a>
+      </div>
+
     </div>
   </div>
 
@@ -321,106 +366,6 @@
   <script src="assets/js/global.js"></script>
   <!-- Google Analytics -->
   <!-- End Google Analytics -->
-
-  <script>
-    let saveFile = () => {
-
-      // Get the data from each element on the form.
-      const themename = document.getElementById('themeName');
-      const themeDescription = document.getElementById('themedescription');
-      var baseTheme = $("#base-theme option:selected").val();
-      var themeVersion = $("#theme-version option:selected").val();
-
-      if ($('#header-region').not(":checked")) {
-        var headerRegion = '';
-      };
-
-      if ($('#header-region').is(":checked")) {
-        var headerRegion = '  ' + $("#header-region").val() + '\r\n';
-      };
-
-      if ($('#breadcrumb-region').not(":checked")) {
-        var breadcrumbRegion = '';
-      };
-
-      if ($('#breadcrumb-region').is(":checked")) {
-        var breadcrumbRegion = '  ' + $("#breadcrumb-region").val() + '\r\n';
-      };
-
-      if ($('#content-region').not(":checked")) {
-        var contentRegion = '';
-      };
-
-      if ($('#content-region').is(":checked")) {
-        var contentRegion = '  ' + $("#content-region").val() + '\r\n';
-      };
-
-      if ($('#content-below-region').not(":checked")) {
-        var contentBelowRegion = '';
-      };
-
-      if ($('#content-below-region').is(":checked")) {
-        var contentBelowRegion = '  ' + $("#content-below-region").val() + '\r\n';
-      };
-
-      if ($('#footer-top-region').not(":checked")) {
-        var footerTopRegion = '';
-      };
-
-      if ($('#footer-top-region').is(":checked")) {
-        var footerTopRegion = '  ' + $("#footer-top-region").val() + '\r\n';
-      };
-
-      if ($('#footer-region').not(":checked")) {
-        var footerRegion = '';
-      };
-
-      if ($('#footer-region').is(":checked")) {
-        var footerRegion = '  ' + $("#footer-region").val() + '\r\n';
-      };
-
-      // This variable stores all the data.
-      // /r for space in file
-      let data =
-        'name: ' + themename.value + '\n' +
-        'type: theme' + '\n' +
-        'description: ' + themeDescription.value + '\n' +
-        'base theme: ' + baseTheme + '\n' +
-        'package: Core' + '\n' +
-        '' + themeVersion + '\n' +
-        '\n' +
-        'libraries:' + '\n' + '  - ' + themename.value + '/' + 'global-styling' + '\n' +
-        'regions:' + '\n' +
-        '' + headerRegion +
-        '' + breadcrumbRegion +
-        '' + contentRegion +
-        '' + contentBelowRegion +
-        '' + footerTopRegion +
-        '' + footerRegion;
-
-
-      // Convert the text to BLOB.
-      const textToBLOB = new Blob([data], { type: 'text/plain' });
-      var themenamefile = document.getElementById('themeName');
-      var baseTheme = $("#base-theme option:selected").val();
-      const sFileName = themenamefile.value + '.' + 'info.yml';   // The file to save the data.
-
-      let newLink = document.createElement('a');
-      newLink.download = sFileName;
-
-      if (window.webkitURL != null) {
-        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-      }
-      else {
-        newLink.href = window.URL.createObjectURL(textToBLOB);
-        newLink.style.display = "none";
-        document.body.appendChild(newLink);
-      }
-
-      newLink.click();
-    }
-
-  </script>
 
 </body>
 
