@@ -746,6 +746,15 @@ display: none;
   background-size: cover;
 }
 
+.hero-area-bg-11 {
+  background: url(../img/dr.webp) no-repeat;
+  background-size: cover;
+}
+
+ol {
+  padding-inline: 15px;
+}
+
 #hero-area {
   color: #fff;
   overflow: hidden;

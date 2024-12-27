@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>how to create customt theme in Drupal 11</title>
+  <link rel="canonical" href="https://gauravmahlawat.github.io/how-to-create-a-theme-in-drupal11.html" />
+  <meta name="description"
+    content="how to create custom theme in drupal 11. drupal 11 custom theme example code. hire a drupal frontend developer freelancer India." />
+  <meta name="google-site-verification" content="DnfZMRbBK-vXju6y6U2xSQiQfXv5nhmsJKL_qZkHAb8" />
+  <meta name="robots" content="all" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css"> -->
+  <!-- Slicknav -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css"> -->
+  <!-- Nivo Lightbox -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css"> -->
+  <!-- Animate -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLE3PEEK3N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CLE3PEEK3N');
+  </script>
+<style>
+  h3 {margin-top: 20px;}
+</style>
+</head>
+
+<body class="create-custom-theme">
+
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="https://gauravmahlawat.github.io/index.html" class="navbar-brand">
+            <h4>Gaurav</h4>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/how-to-create-drupal-10-theme.html">
+                Drupal 11 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/web-accessibility-for-everyone.html">
+                Accessibility
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/twig-template-engine.html">
+                Twig
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html">
+                Contribution
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="switch">
+          <div class="toggle">
+            <div class="names">
+              <div class="light-top">
+                <p class="light">Light</p>
+                <div class="switch-case"></div>
+                <p class="dark">Dark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-3">
+          <div class="circle">
+            <div class="crescent"></div>
+            <!-- https://codepen.io/demilad/pen/bZRjpb -->
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="https://gauravmahlawat.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/how-to-create-drupal-10-theme.html">Drupal 11</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/web-accessibility-for-everyone.html">Accessibility</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/twig-template-engine.html">Twig</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html">Contribution</a>
+        </li>
+
+        <li>
+          <a href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Create custom theme <span>Drupal 11</span></h2>
+              <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                <li>
+                  <a class="google" target="_blank" href="https://github.com/gauravmahlawat"><i
+                      class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i
+                      class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i
+                      class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <a href="mailto:gauravmahlawat@gmail.com" class="btn btn-common">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <div class="container section-padding">
+    <div class="col-lg-12 col-md-9 col-sm-12 input-themes">
+      <div>
+        <div class="container section-padding">
+          <h2>Steps to Create a Custom Drupal 11 Theme</h2>
+                
+          <h3>1. Set Up the Theme Directory</h3>
+          <p>First, you need to create a directory for your theme inside the <code>themes/custom</code> folder. For example, if you want to name your theme "MyTheme", you would create the following directory structure:</p>
+        
+          <pre class="code"><code>/themes
+  /custom
+    /mytheme</code></pre>
+        
+          <h3>2. Create the <code>.info.yml</code> File</h3>
+          <p>The <code>.info.yml</code> file is essential for defining your theme’s metadata, such as the name, description, and regions. Create a file called <code>mytheme.info.yml</code> inside the <code>mytheme</code> directory with the following content:</p>
+        
+          <pre class="code"><code>name: MyTheme
+type: theme
+base theme: classy
+description: 'A custom theme for Drupal 11.'
+core_version_requirement: ^11
+package: Custom
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  content: 'Content'
+  footer: 'Footer'
+
+libraries:
+  - mytheme/global-styling</code></pre>
+        
+          <p><strong>Explanation:</strong></p>
+          <ul>
+            <li><code>base theme</code>: Optional. If you're building on top of an existing theme like <code>classy</code>, you inherit some base styles and templates.</li>
+            <li><code>regions</code>: Defines layout regions where blocks can be placed (e.g., header, footer).</li>
+            <li><code>libraries</code>: Defines CSS and JavaScript libraries used in your theme.</li>
+          </ul>
+        
+          <h3>3. Create the <code>.libraries.yml</code> File</h3>
+          <p>In the <code>mytheme.libraries.yml</code> file, you’ll define the CSS and JavaScript assets your theme uses. Create this file inside your theme directory:</p>
+        
+          <pre class="code"><code>global-styling:
+  version: 1.0
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/scripts.js: {}</code></pre>
+        
+          <p>Here, we're adding the custom styles and scripts for the theme. You’ll create the <code>css/styles.css</code> and <code>js/scripts.js</code> files next.</p>
+        
+          <h3>4. Add CSS and JavaScript Files</h3>
+          <p>Now, create the following files inside the <code>mytheme</code> directory:</p>
+          <ul>
+            <li><strong><code>css/styles.css</code></strong>: This file contains your custom styles.</li>
+            <li><strong><code>js/scripts.js</code></strong>: This file contains your custom JavaScript.</li>
+          </ul>
+        
+          <p>Example of a simple <code>styles.css</code>:</p>
+          <pre class="code"><code>body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+        
+h1 {
+  color: #333;
+}</code></pre>
+        
+          <p>Example of a simple <code>scripts.js</code>:</p>
+          <pre class="code"><code>document.addEventListener('DOMContentLoaded', function () {
+  console.log('My custom theme JS loaded.');
+});</code></pre>
+        
+          <h3>5. Create a Theme Template File</h3>
+          <p>Drupal uses template files to render the HTML structure of your site. Start by creating a <code>page.html.twig</code> file inside a new <code>templates</code> directory in your theme:</p>
+        
+          <pre class="code"><code>/themes
+  /custom
+    /mytheme
+      /css
+        styles.css
+      /js
+        scripts.js
+      /templates
+        page.html.twig
+      mytheme.info.yml
+      mytheme.libraries.yml</code></pre>
+        
+          <p>Here’s an example of a basic <code>page.html.twig</code>:</p>
+          <pre class="code"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;{{ head_title }}&lt;/title&gt;
+      {{ head }}
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;header&gt;
+        &lt;div class="header-content"&gt;
+          {{ page.header }}
+        &lt;/div&gt;
+      &lt;/header&gt;
+
+      &lt;nav&gt;
+        &lt;div class="primary-menu"&gt;
+          {{ page.primary_menu }}
+        &lt;/div&gt;
+      &lt;/nav&gt;
+
+      &lt;main&gt;
+        &lt;div class="content"&gt;
+          {{ page.content }}
+        &lt;/div&gt;
+      &lt;/main&gt;
+
+      &lt;footer&gt;
+        &lt;div class="footer-content"&gt;
+          {{ page.footer }}
+        &lt;/div&gt;
+      &lt;/footer&gt;
+
+      {{ scripts }}
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+        
+          <p>This file defines the structure of your page, including regions like <code>header</code>, <code>primary_menu</code>, and <code>footer</code>, which are referenced in your <code>mytheme.info.yml</code> file.</p>
+        
+          <h3>6. Enable the Theme</h3>
+          <p>Once you’ve created all the necessary files, you can enable your theme through the Drupal admin interface:</p>
+          <ul>
+            <li>Go to <strong>Appearance</strong> in the Drupal admin menu.</li>
+            <li>Find your theme in the list and click <strong>Install and set as default</strong>.</li>
+          </ul>
+        
+          <p>Alternatively, you can enable it via Drush:</p>
+          <pre class="code"><code>drush theme:enable mytheme</code></pre>
+        
+          <h3>7. Clear the Cache</h3>
+          <p>To see your theme in action, clear the cache:</p>
+          <pre class="code"><code>drush cr</code></pre>
+        
+          <h3>8. Customize the Theme</h3>
+          <p>With your theme now active, you can start customizing it further by:</p>
+          <ul>
+            <li>Adding additional templates like <code>node.html.twig</code> or <code>block.html.twig</code>.</li>
+            <li>Overriding default CSS styles to match your design.</li>
+            <li>Creating a custom <code>theme-settings.php</code> file to add theme-specific settings in the admin interface.</li>
+          </ul>
+        
+          <h3>Conclusion</h3>
+          <p>By following these steps, you’ve created a basic custom theme for Drupal 11. From here, you can extend your theme with more templates, custom styles, and functionality to suit your needs. A well-crafted theme not only enhances the visual appeal of your site but also improves the overall user experience.</p>
+        </div>
+
+      
+      </div>
+
+                <div class="help-card">
+              <h2>Looking for a Drupal 10 or Drupal 11 Developer?</h2>
+              <p>Whether you need a custom Drupal 10 or Drupal 11 backend module, a responsive frontend theme, or expert freelance support, we're here to help. Write to us, and we'll create it for you!</p>
+              <a href="mailto:gauravmahlawat@gmail.com" class="help-card-button">Hire a Drupal Expert</a>
+          </div>
+
+          <style>
+            .help-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.help-card-button {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.help-card-button:hover {
+    background-color: #0056b3;
+}
+          </style>
+
+    </div>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="google" target="_blank" href="https://github.com/gauravmahlawat"><i
+                    class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i
+                    class="fa fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i
+                    class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+            <p>Copyright © Gaurav All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hitwebcounter Code START -->
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/global.js"></script> -->
+  <!-- Google Analytics -->
+  <!-- End Google Analytics -->
+
+</body>
+
+</html>

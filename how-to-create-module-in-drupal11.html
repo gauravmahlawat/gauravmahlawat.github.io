@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>how to create custom module in Drupal 11</title>
+  <link rel="canonical" href="https://gauravmahlawat.github.io/how-to-create-module-in-drupal11.html" />
+  <meta name="description"
+    content="how to create custom module in drupal 11. create drupal 11 module example. how to create a custom module in Drupal." />
+  <meta name="google-site-verification" content="DnfZMRbBK-vXju6y6U2xSQiQfXv5nhmsJKL_qZkHAb8" />
+  <meta name="robots" content="all" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5317237265905981"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/css.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLE3PEEK3N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-CLE3PEEK3N');
+  </script>
+
+  <style>
+    .help-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.help-card-button {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.help-card-button:hover {
+    background-color: #0056b3;
+}
+    </style>
+
+<style>
+  .code-block {
+    position: relative;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  function copyToClipboard(button, codeId) {
+    const codeElement = document.getElementById(codeId);
+    navigator.clipboard.writeText(codeElement.innerText).then(() => {
+      button.innerText = "Copied!";
+      setTimeout(() => { button.innerText = "Copy Code"; }, 2000);
+    });
+  }
+</script>
+
+</head>
+
+<body class="create-custom-theme">
+
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="https://gauravmahlawat.github.io/index.html" class="navbar-brand">
+            <h4>Gaurav</h4>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/how-to-create-drupal-10-theme.html">
+                Drupal 11 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/web-accessibility-for-everyone.html">
+                Accessibility
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/twig-template-engine.html">
+                Twig
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html">
+                Contribution
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="switch">
+          <div class="toggle">
+            <div class="names">
+              <div class="light-top">
+                <p class="light">Light</p>
+                <div class="switch-case"></div>
+                <p class="dark">Dark</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ml-3">
+          <div class="circle">
+            <div class="crescent"></div>
+            <!-- https://codepen.io/demilad/pen/bZRjpb -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="https://gauravmahlawat.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/how-to-create-drupal-10-theme.html">Drupal 11</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/web-accessibility-for-everyone.html">Accessibility</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/twig-template-engine.html">Twig</a>
+        </li>
+        <li>
+          <a href="https://gauravmahlawat.github.io/how-to-start-drupal-contribution.html">Contribution</a>
+        </li>
+
+        <li>
+          <a href="https://gauravmahlawat.github.io/blogs.html">Blogs</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg-11">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Create custom module in Drupal 11</h2>
+              <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                <li>
+                  <a class="google" target="_blank" href="https://github.com/gauravmahlawat"><i
+                      class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i
+                      class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i
+                      class="fa fa-instagram"></i></a>
+                </li>
+              </ul>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <a href="mailto:gauravmahlawat@gmail.com" class="btn btn-common">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <div class="container section-padding">
+    <div class="col-lg-12 col-md-9 col-sm-12 input-themes">
+        <!-- Hero Section -->
+  <section class="hero-area">
+    <div class="container text-cente">
+      <h1>Create a Custom Module in <span>Drupal 11</span></h1>
+      <p>Learn how to build a custom module step by step with this guide for Drupal 11.</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <div class="container section-padding">
+    <h2>Steps to Create a Drupal 11 Module:</h2>
+
+    <ol>
+      <li>
+        <p>Create a directory for your module in <code>modules/custom</code>. For example, for a module named
+          <code>mymodule</code>, create a directory <code>modules/custom/mymodule</code>.</p>
+      </li>
+      <li>
+        <p>Create the <code>mymodule.info.yml</code> file with the following content:</p>
+        <div class="code-block">
+          <button class="copy-button" onclick="copyToClipboard(this, 'info-file')">Copy Code</button>
+          <pre id="info-file">
+name: My Module
+type: module
+description: A custom module for Drupal 11.
+core_version_requirement: ^11
+package: Custom
+          </pre>
+        </div>
+      </li>
+      <li>
+        <p>Create a <code>mymodule.module</code> file for hooks and functionality:</p>
+        <div class="code-block">
+          <button class="copy-button" onclick="copyToClipboard(this, 'module-file')">Copy Code</button>
+          <pre id="module-file">
+&lt;?php
+/**
+ * @file
+ * Contains the functionality for mymodule.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function mymodule_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.mymodule':
+      return t('This is the help text for My Module.');
+  }
+}
+          </pre>
+        </div>
+      </li>
+      <li>
+        <p>Enable the module via the UI or with Drush:</p>
+        <code>drush en mymodule</code>
+      </li>
+      <li>
+        <p>Clear the cache:</p>
+        <code>drush cr</code>
+      </li>
+    </ol>
+    <p>Your custom module for Drupal 11 is now ready to use!</p>
+  </div>
+  <div class="container section-padding">
+   
+    <h3>Required Files for a Custom Drupal 11 Module</h3>
+    <p>When developing a custom Drupal module, the following two files are essential:</p>
+  
+    <ol>
+      <li>
+        <strong>mymodule.info.yml</strong> – This file provides crucial metadata for your module, such as its name, description, and compatibility with Drupal core. It's essential for Drupal to recognize and register your module. Without this file, Drupal won't detect your module, and you won’t be able to enable it.
+      </li>
+      <li>
+        <strong>mymodule.module</strong> – This file is where the functionality of your module resides. It contains hooks and custom logic, like the <code>hook_help()</code> function for providing help text. Without this file, your module won't perform any custom actions, even if it's enabled.
+      </li>
+    </ol>
+  
+    <h3 style="margin-top: 20px;">What Happens if Files Are Missing?</h3>
+    <p>Let's say you create a module with only the <code>mymodule.info.yml</code> file but forget to include the <code>mymodule.module</code> file. In this case, your module will show up in the Drupal admin interface, and you’ll be able to enable it. However, since there’s no functionality defined in the <code>mymodule.module</code> file, your module won't do anything custom—like showing help text or adding any specific features.</p>
+  
+    <p>On the other hand, if you skip the <code>mymodule.info.yml</code> file, Drupal won’t even recognize your module, no matter what functionality you’ve added in the <code>mymodule.module</code> file. The module simply won’t be available for activation.</p>
+  
+    <h3 style="margin-top: 20px;">Conclusion</h3>
+    <p>To ensure your custom Drupal 11 module works as expected, remember to include both the <code>mymodule.info.yml</code> and <code>mymodule.module</code> files. These files are the foundation of your module, allowing it to be recognized and function properly. By following this guide and adhering to Drupal's file structure standards, you can build powerful modules that enhance your site’s functionality.</p>
+  
+    <p>With the right setup, your custom modules will not only provide valuable features for your users but also improve the overall performance and SEO of your Drupal site.</p>
+  </div>
+
+      <div class="help-card">
+          <h2>Need Help with Your Drupal Theme or Module?</h2>
+          <p>If you need assistance creating a custom Drupal theme or module, feel free to reach out to us. We are here to create it for you!</p>
+          <a href="mailto:gauravmahlawat@gmail.com" class="help-card-button">Write to Us</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/gaurav.mahlawat.96"><i
+                    class="fa fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a class="instagram" target="_blank" href="https://www.instagram.com/gaurav_mahlawat"><i
+                    class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+            <p>Copyright © Gaurav All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hitwebcounter Code START -->
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/global.js"></script>
+  <!-- Google Analytics -->
+  <!-- End Google Analytics -->
+
+</body>
+
+</html>
